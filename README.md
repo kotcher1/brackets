@@ -1,4 +1,7 @@
 # Скобки
+Учебная задача по JS
+
+*(В рамках курса Frontend-Developer в RollingScopesSchool)*
 
 ## Task
 
