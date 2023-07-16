@@ -1,10 +1,11 @@
-# Brackets
+# Скобки
 
 ## Task
 
-Implement function `check(str, bracketsConfig)`, that for given brackets sequence will return `true` if it is correct and `false` otherwise
+Реализовать функцию `check(str, bracketsConfig)`, которая для заданной последовательности скобок будет возвращать `true`, если она верна (у каждой открывающей скобки есть закрывающая), и `false` в противном случае.
 
-In the second param there is `bracketsConfig` - the array of pairs open-closed brackets. Each subarray includes only 2 elements - opening and closing bracket
+Во втором параметре есть `bracketsConfig` - массив пар открытых-закрытых скобок. Каждый подмассив включает в себя только 2 элемента - открывающую и закрывающую скобку.
+
 
 ```js
 check('()', [['(', ')']]) // -> true
@@ -15,7 +16,7 @@ check('[(])', [['(', ')'], ['[', ']']]) // -> false
 check('[]()', [['(', ')'], ['[', ']']]) // -> true
 check('[]()(', [['(', ')'], ['[', ']']]) // -> false
 
-// special case: opening and closing bracket can be the same :)
+// открывающая и закрывающая скобки могут быть одинаковыми :)
 
 check('||', [['|', '|']]) // -> true
 check('|()|', [['(', ')'], ['|', '|']]) // -> true
@@ -23,4 +24,8 @@ check('|(|)', [['(', ')'], ['|', '|']]) // -> false
 check('|()|(||)||', [['(', ')'], ['|', '|']]) // -> true
 ```
 
-Write your code in `src/index.js`
+## Как тестировать
+
+- Запустить `npm install` в терминале
+- Запустить `npm test` в терминале
+- Вы сможете увидеть количество пройденных и провалившихся тестов
